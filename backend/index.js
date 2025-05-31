@@ -26,6 +26,13 @@ app.use('/api/attempts', require('./routes/attempts.router.js'));
 // Add this to your main server file
 app.use('/api/admin', require('./routes/admin.router.js'));
 
+app.get('/', (req, res) => {
+  res.send({
+    activeStatus:true,
+    error:false,
+  });
+});
+
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
