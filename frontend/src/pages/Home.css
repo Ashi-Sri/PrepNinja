@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
+}
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.content h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.content span {
+  color: #ff9900;
+}
+
+.content p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  margin: 10px;
+  background: transparent;
+  border: 2px solid #ff9900;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background: #ff9900;
+  color: black;
+}
+
+.features {
+  padding: 100px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.features h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.feature {
+  padding: 30px;
+  background: #1e1e1e;
+  border: 2px solid #ff9900;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.feature:hover {
+  background: #ff9900;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ff9900;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.testimonials {
+  padding: 100px 50px;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.testimonials h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  display: inline-block;
+  border-bottom: 4px solid #f4a261; /* Same Accent Color */
+  padding-bottom: 10px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.testimonial {
+  background: rgba(0, 0, 0, 0.8);;
+  padding: 40px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimonial h4 {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #f4a261; /* Accent Color */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-style: italic;
+}
